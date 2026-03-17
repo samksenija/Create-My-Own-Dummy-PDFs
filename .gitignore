@@ -1,3 +1,4 @@
 connection/.env
 connection/__pycache__
 generate_pdfs/__pycache__
+generate_pdfs/pdfs
