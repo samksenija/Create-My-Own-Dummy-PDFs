@@ -7,7 +7,7 @@ import generate_pdf_structure
 
 session = connection_snowflake.new_session
 
-#I have limited data to 10 rows, as this is or testing purposes. You can remove the limit to generate PDFs for all rows in the table.
+#I have limited data to 10 rows, as this is for testing purposes. You can remove the limit to generate PDFs for all rows in the table.
 df_dummy_ledger_table= session.sql("SELECT * FROM DUMMY_DATASETS.SCHEMA_FOR_DUMMY_DATA.DUMMY_LEDGER LIMIT 10").collect()
 
 # Generate PDFs for each row
