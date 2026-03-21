@@ -27,5 +27,9 @@ def generate_pdf(transaction_data):
     # Reference
     pdf.cell(200, 10, txt=f"Reference: {transaction_data['reference']}", ln=True)
 
+    #Accountant ID
+    pdf.cell(200, 10, txt=f"Accountant ID: {transaction_data['accountant_id']}", ln=True)
+
+
     # Output the PDF, define your own path
-    pdf.output(f"C:/Users/User/Desktop/dummy_pdfs/Create-My-Own-Dummy-PDFs/generate_pdfs/pdfs/transaction_{transaction_data['reference']}.pdf")
+    pdf.output(f"C:/Users/User/Desktop/Projects/dummy_pdfs/Create-My-Own-Dummy-PDFs/generate_pdfs/pdfs/transaction_{transaction_data['reference']}.pdf")

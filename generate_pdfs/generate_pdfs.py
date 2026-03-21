@@ -17,7 +17,8 @@ for row in df_dummy_ledger_table:
         "account_description": row[1],
         "reference": row[2],
         "debit": row[3] or 0,
-        "credit": row[4] or 0
+        "credit": row[4] or 0,
+        "accountant_id": row[5]
     }
 
     generate_pdf_structure.generate_pdf(transaction_data)
